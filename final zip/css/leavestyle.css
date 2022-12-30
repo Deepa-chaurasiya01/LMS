@@ -1,0 +1,98 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.container {
+ 
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+    content: "" ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: black;
+}
+.container form .Employe-Details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .Employe-Details .input-box{
+       margin-bottom: 15px;
+       width: calc(100% / 2 - 20px);
+}
+.Employe-Details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.Employe-Details .input-box input{
+    height: 37px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.Employe-Details .input-box select{
+    height: 37px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.Employe-Details .input-box input:focus,
+.Employe-Details .input-box input:valid{
+    border-color:black;
+}
+.Employe-Details .input-box select:focus,
+.Employe-Details .input-box select:valid{
+    border-color:black;
+}
+.Employe-Details .input-box textarea:focus,
+.Employe-Details .input-box textarea:valid{
+    border-color:black;
+}
+
+@media (max-width: 584px) {
+    .container{
+    max-width : 100%;
+ }
+ form .Employe-Details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+form .gender-details .catagory{
+    width: 100%;
+}
+.container form .Employe-Details{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.Employe-Details::-webkit-scrollbar{
+    width: 0;
+}
+
+}
+.Btn{
+    width:100%;
+}
